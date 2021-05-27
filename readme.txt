@@ -1,6 +1,6 @@
-=== Open Links In New Tab ===
+=== WebP & SVG Support ===
 Contributors: rezakhan995
-Tags: links, external links, internal links, new tab, new window, target blank
+Tags: webp, support webp, upload webp, svg, support svg, upload svg, vector, image
 Requires at least: 5.2
 Tested up to: 5.7
 Stable tag: 1.0.0
@@ -8,31 +8,36 @@ Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Opens both internal and external links in a new tab depending on the user has chosen.
+Direct upload WebP & SVG files into wordpress media and use them like any other image.
 
 == Description ==
+WebP is an image format with lossless compression, along with animation and alpha transparency.
 
-Opens internal and external links in a new tab. You can set if you want to open internal links in new tab, or external links in a new tab or both.
+Scalable Vector Graphics (SVG) are becoming more useful and important in modern web design. SVG allows designers you to embed images with small file sizes. But ir does not lose the quality of the image.
 
-This plugin adds only a few lines of JavaScript code and it does not depend on any external library. It does not event require jQuery, which is the most common JavaScript library. Moreover, the code it produces is completely search engine optimized (SEO).
+This plugin will help you to upload and view webp and svg format image in WordPress media library. Once activated, you can simply upload SVG and webp images to your media library like any other file. It won't conflict with any theme or plugin. It also provide options so that you can enable webp or svg or both formats for your site. WebP & SVG Support plugin is also the fastest and lightest weight plugin anyone could offer. 
 
 
 
 == Installation ==
 
-1. Upload the plugin files to the /wp-content/plugins/plugin-name directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the /wp-content/plugins/webp-svg-support directory, or install the plugin through the WordPress plugins screen directly.
 2. Activate the plugin through the ‘Plugins’ screen in WordPress
-3. All Settings can be found in Admin sidebar -> Settings -> Links In New Tab
+3. All Settings can be found in Admin sidebar -> Settings -> WebP & SVG Support
 
 == Frequently Asked Questions ==
 
-= Does it conflict with any other plugin. =
+= Does it conflict with any other plugin or theme. =
 
-The plugin may conflict with other plugins that forcefully change the links’ onClick attribute.
+WebP & SVG Support does not conflict with any plugin or theme.
 
-= Does it work with WooCommerce? =
+= Will this plugin work automatically as soon as we activate? =
 
-This plugin is still not compatible with WooCommerce because WooCommerce replaces their external links from a tag to form tag.
+Yes. You have option to enable / disable webp and svg format. But both of them are enabled by default. You don't need to do anything.
+
+= SVG images are uploaded to media but not showing on the front-end / customizer. What should I do? =
+
+In the later versions of wordpress, SVG files aren't shown by default. To allow SVG to work in the customizer, page-builder and front-end, you must add width and height of the uploaded SVG file through CSS. 
 
 
 == Screenshots ==

@@ -30,6 +30,14 @@ class Bootstrap {
 
     }
 
+    /**
+     * Update Webp & SVG Upload Mime
+     * 
+     * @since 1.0.0
+     *
+     * @param [type] $mime_types
+     * @return void
+     */
     public function webpsvg_update_mime( $mime_types ) {
         if('yes' === get_option( 'webpsvg_allow_webp', '' )){
             $mime_types['webp'] = 'image/webp';
@@ -41,6 +49,15 @@ class Bootstrap {
         return $mime_types;
     }
 
+    /**
+     * Update Webp Image Visibility
+     * 
+     * @since 1.0.0
+     *
+     * @param [type] $result
+     * @param [type] $path
+     * @return void
+     */
     public function webpsvg_update_visibility( $result, $path ) {
 
         if ( false === $result ) {
@@ -61,6 +78,13 @@ class Bootstrap {
     }
 
 
+    /**
+     * Admin Menu
+     * 
+     * @since 1.0.0
+     * 
+     * @return void
+     */
     function webpsvg_admin_menu() {
         add_options_page( esc_html__( 'WebP & SVG Support', 'webp-svg-support' ),
             esc_html__( 'WebP & SVG Support', 'webp-svg-support' ),
@@ -69,10 +93,17 @@ class Bootstrap {
             [$this, 'webpsvg_options_page'] );
     }
     
-    function webpsvg_options_page() {
+    /**
+     * Plugins Settings Page
+     * 
+     * @since 1.0.0
+     *
+     * @return void
+     */
+    public function webpsvg_options_page() {
         ?>
         <div class="webpsvg-wrap">
-            <h2><?php echo esc_html__( "WebP & SVG Support", 'webp-svg-support' );?></h2>
+            <h2><?php echo esc_html__( 'WebP & SVG Support', 'webp-svg-support' );?></h2>
             <p>
                 <form method="post" action="options.php">
                     <?php wp_nonce_field( 'update-options' );?>
