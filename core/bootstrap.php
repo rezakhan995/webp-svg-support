@@ -1,6 +1,8 @@
 <?php
 namespace Webpsvg_Support\Core;
 
+use Webpsvg_Support;
+
 defined( 'ABSPATH' ) || wp_die( 'No access directly.' );
 
 class Bootstrap {
@@ -17,6 +19,9 @@ class Bootstrap {
     }
 
     public function init() {
+        add_filter('plugin_action_links_' . Webpsvg_Support::plugins_basename(), [$this, 'insert_plugin_links']);
+        
+        add_filter('plugin_row_meta', [$this, 'insert_plugin_row_meta'], 10, 2);
 
         add_action( 'admin_menu', [$this, 'webpsvg_admin_menu'] );
 
@@ -28,6 +33,32 @@ class Bootstrap {
             add_filter( 'file_is_displayable_image', [$this, 'webpsvg_update_visibility'], 9, 2 );
         }
 
+    }
+
+    /**
+     * Undocumented function
+     *
+     * @param [type] $links
+     * @param [type] $file
+     * @return void
+     */
+    public function insert_plugin_row_meta($links, $file) {
+
+        $links[] = sprintf('<a href="%s" action="_blank"> %s </a>', 'https://wordpress.org/support/plugin/webp-svg-support/reviews/#new-post', esc_html__('Rate the plugin ★★★★★', 'webp-svg-support'));
+
+        return $links;
+    }
+
+
+    /**
+     * Undocumented function
+     *
+     * @param [type] $links
+     * @return void
+     */
+    public function insert_plugin_links( $links ){
+        $links[] = sprintf('<a href="%s" > %s </a>', admin_url() . 'admin.php?page=webp_svg_support', esc_html__('Settings', 'webp-svg-support'));
+        return $links;
     }
 
     /**
