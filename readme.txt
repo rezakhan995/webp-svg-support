@@ -1,9 +1,9 @@
 === WebP & SVG Support ===
 Contributors: rezakhan995
-Tags: webp, support webp, upload webp, svg, support svg, upload svg, vector, image
+Tags: webp, svg, support webp, support svg, upload webp, upload svg
 Requires at least: 5.2
 Tested up to: 5.7
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -41,10 +41,16 @@ In the later versions of wordpress, SVG files aren't shown by default. To allow 
 
 
 == Screenshots ==
-
+1. WebP & SVG Support Main Settings 
 
 == Changelog ==
 
+= 1.1.0 ( June 13, 2021 ) =
+* Tweak  : Added settings options
+* Tweak  : Added settings shortcut from plugin dashboard
+
+= 1.0.0 ( June 02, 2021 ) =
+* Initial release
 
 == Upgrade Notice ==
 
