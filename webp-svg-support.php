@@ -3,7 +3,7 @@
  * Plugin Name:       WebP & SVG Support
  * Plugin URI:        https://wordpress.org/plugins/webp-svg-support/
  * Description:       Allows WebP and SVG image file upload into WordPress media and sanitizes before saving it.
- * Version:           1.1.0
+ * Version:           1.2.0
  * Author:            Reza Khan
  * Author URI:        https://www.reza-khan.com/
  * License:           GPL-2.0+
@@ -70,7 +70,7 @@ class Webpsvg_Support {
      * @return string
      */
     public static function version(){
-        return '1.0.0';
+        return '1.2.0';
     }
 
     /**
