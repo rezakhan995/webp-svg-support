@@ -2,9 +2,9 @@
 Contributors: rezakhan995
 Tags: webp, svg, support, safe, media
 Requires at least: 5.2
-Tested up to: 5.9
-Stable tag: 1.2.2
 Requires PHP: 5.4
+Tested up to: 6.1.1
+Stable tag: 1.3.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,11 @@ In the later versions of wordpress, SVG files aren't shown by default. To allow 
 1. WebP & SVG Support Main Settings 
 
 == Changelog ==
+
+= 1.3.0 ( November 27, 2022 ) =
+Fix               : Minor bug fix
+Tweak             : Compatible with Wordpress 6.1 major release
+Tweak             : Coding standard guideline update.
 
 = 1.2.2 ( January 28, 2021 ) =
 Fix               : Minor bug fix
